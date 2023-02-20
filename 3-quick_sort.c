@@ -28,7 +28,7 @@ void quick_sort_range_lomuto(int *array, size_t low size_t high, size_t size)
 	size_t k, i;
 	int pivot;
 
-	if ((low >= high || (array == NULL))
+	if ((low >= high) || (array == NULL))
 		return;
 	pivot = array[high];
 	k = low;
@@ -41,7 +41,7 @@ void quick_sort_range_lomuto(int *array, size_t low size_t high, size_t size)
 				swap_items(array, k, i);
 				print_array(array, size);
 			}
-			k++
+			k++;
 		}
 	}
 	if (k != high)
