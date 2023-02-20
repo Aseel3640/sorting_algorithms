@@ -23,7 +23,7 @@ void swap_items(int *array, size_t l, size_t r)
  * @high: the ending position
  * @size: the length of array
  */
-void quick_sort_range_lomuto(int *array, size_t low size_t high, size_t size)
+void quick_sort_range_lomuto(int *array, size_t low, size_t high, size_t size)
 {
 	size_t k, i;
 	int pivot;
