@@ -6,7 +6,7 @@
  * @list: doubly linked list
  * Return: no return
  */
-viod insertion_sort_list(listint_t **list)
+void insertion_sort_list(listint_t **list)
 {
 	listint_t *ptr, *tmp;
 
