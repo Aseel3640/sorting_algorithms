@@ -50,7 +50,7 @@ void quick_sort_range_lomuto(int *array, size_t low size_t high, size_t size)
 		print_array(array, size);
 	}
 	if (k - low > 1)
-		quick_sort_range_lomuto(array, low k - 1, size);
+		quick_sort_range_lomuto(array, low, k - 1, size);
 	if (high - k > 1)
 		quick_sort_range_lomuto(array, k + 1, high, size);
 }
@@ -63,6 +63,6 @@ void quick_sort(int *array, size_t size)
 {
 	if (array != NULL)
 	{
-		quick_sort_range_lomuto(array, 0 size - 1, size);
+		quick_sort_range_lomuto(array, 0, size - 1, size);
 	}
 }
