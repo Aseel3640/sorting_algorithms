@@ -37,7 +37,7 @@ void shell_sort(int *array, size_t size)
 	while (h >= 1)
 	{
 		for (i = h; i < size; i++)
-			for (j = i; j >= h && array[j - h]; j -= h)
+			for (j = i; j >= h && array[j] < array[j - h]; j -= h)
 				_swap(array, j, j - h);
 		h /= 3;
 		print_array(array, size);
